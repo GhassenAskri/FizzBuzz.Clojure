@@ -4,4 +4,4 @@
 
 (deftest fizzbuzzAnArrayOfIntegers
   (testing "When i fizzbuzz [1 15 9 4 5 10 0] i get a string equal to 1 fizzbuzz fizz 4 buzz buzz fizzbuzz"
-    (is (= (fizzbuzz [1 15 9 4 5 10 0]) "fizzbuzz fizz 4 buzz buzz fizzbuzz"))))
+    (is (= (fizzbuzz-outsidein.core/fizzbuzz [1 15 9 4 5 10 0]) "fizzbuzz fizz 4 buzz buzz fizzbuzz"))))
