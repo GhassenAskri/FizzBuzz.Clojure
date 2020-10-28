@@ -31,3 +31,11 @@
   (testing "When I fizzbuzz 5 I get buzz")
   (is(= (fizzbuzz-outsidein.core/isFizzAndBuzz 15) true)))
 
+(deftest fizzBuzzArandomNumber
+  (testing "When I fizzbuzz 5 I get buzz")
+  (is(= (fizzbuzz-outsidein.core/fizzBuzzOneNumber 15) "fizzbuzz"))
+  (testing "When I fizzbuzz 5 I get buzz")
+  (is(= (fizzbuzz-outsidein.core/fizzBuzzOneNumber 1) "1"))
+  (testing "When I fizzbuzz 5 I get buzz")
+  (is(= (fizzbuzz-outsidein.core/fizzBuzzOneNumber 0) "fizzbuzz")))
+
