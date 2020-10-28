@@ -10,4 +10,6 @@
   (testing "When i fizzbuzz 1 i get 1 as string "
     (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumber 1) "1")))
   (testing "When i fizzbuzz 2 i get 2 as string "
-    (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumber 2) "2"))))
+    (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumber 2) "2")))
+  (testing "When i fizzbuzz 4 i get 4 as string "
+    (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumber 4) "4"))))
