@@ -44,3 +44,13 @@ clj::fizzbuzz-outsidein.core-test=>
 (fizzBuzzOneNumber 2)
 "2"
 clj::fizzbuzz-outsidein.core-test=> 
+#'fizzbuzz-outsidein.core/fizzBuzzOneNumber
+clj::fizzbuzz-outsidein.core=> 
+(fizzBuzzOneNumber 6)
+"4"
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzBuzzOneNumber
+clj::fizzbuzz-outsidein.core=> 
+(fizzBuzzOneNumber 6)
+"6"
+clj::fizzbuzz-outsidein.core=> 
