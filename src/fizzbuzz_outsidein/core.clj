@@ -6,7 +6,7 @@
   [arraOfInteger]
   (str "fizzbuzz fizz 4 buzz buzz fizzbuzz"))
 
-(defn fizzBuzzOneNumber 
+(defn fizzbuzzOneNumberThatIsNotMultipleOfThreeOrFive 
   "fizzbuzzOneNumber that not multiple of 3 or 5 return the same number as string"
   [number?]
   (str number?))
@@ -36,4 +36,4 @@
   "I don't do a whole lot ... yet."
   [& args]
   (fizzbuzz [1 15 9 4 5 10 0])
-  (fizzBuzzOneNumber 1))
+  (fizzbuzzOneNumberThatIsNotMultipleOfThreeOrFive 1))

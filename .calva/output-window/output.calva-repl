@@ -83,3 +83,8 @@ clj::fizzbuzz-outsidein.core=>
 clj::fizzbuzz-outsidein.core=> 
 "notfizzbuzz"
 clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzzAnumberThatIsNotMultipleOfThreeOrFive
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzzAnumberThatIsNotMultipleOfThreeOrFive 1)
+"1"
+clj::fizzbuzz-outsidein.core=> 
