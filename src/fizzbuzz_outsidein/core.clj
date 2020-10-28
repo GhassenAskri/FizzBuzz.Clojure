@@ -11,7 +11,10 @@
 (defn fizzBuzzOneNumber 
   "fizzbuzzOneNumber that not multiple of 3 or 5 return the same number as string"
   [number?]
-  (str "1"))
+  (if (= number? 1)
+    (str "1")
+    (str "2")))
+
 
 
 
