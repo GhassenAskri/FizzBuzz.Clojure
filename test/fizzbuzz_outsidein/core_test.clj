@@ -16,4 +16,4 @@
 
 (deftest fizzbuzzAnumberThatIsMultipleOfThree
   (testing "When I fizzbuzz 3 I get fizz"
-    (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumbeMultipleOfThree 3) "fizz"))))
+    (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumberMultipleOfThree 3) "fizz"))))

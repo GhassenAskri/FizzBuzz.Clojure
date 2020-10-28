@@ -54,3 +54,8 @@ clj::fizzbuzz-outsidein.core=>
 (fizzBuzzOneNumber 6)
 "6"
 clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzBuzzOneNumberMultipleOfThree
+clj::fizzbuzz-outsidein.core=> 
+(fizzBuzzOneNumberMultipleOfThree 3)
+"fizz"
+clj::fizzbuzz-outsidein.core=> 

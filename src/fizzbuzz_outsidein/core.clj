@@ -6,16 +6,15 @@
   [arraOfInteger]
   (str "fizzbuzz fizz 4 buzz buzz fizzbuzz"))
 
-
-
 (defn fizzBuzzOneNumber 
   "fizzbuzzOneNumber that not multiple of 3 or 5 return the same number as string"
   [number?]
   (str number?))
 
-
-
-
+(defn fizzBuzzOneNumberMultipleOfThree
+  "fizzbuzzOneNumber that multiple of 3 return fizz"
+  [number?]
+  (str "fizz"))
 
 
 (defn -main
