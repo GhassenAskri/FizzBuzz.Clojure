@@ -21,10 +21,17 @@
 (defn fizzBuzzOneNumberMultipleOfFive
   "fizzbuzzOneNumber that multiple of five"
   [number?]
-  (if(=(mod number? 5) 0)
-   (str "buzz")
+  (if (= (mod number? 5) 0)
+    (str "buzz")
     (str "notbuzz")))
 
+(defn fizzBuzzOneNumberMultipleOfFiveAndThree
+  "fizzbuzzOneNumber that multiple of both three and five"
+  [number?]
+  (if (= (mod number? 15) 0)
+    (str "fizzbuzz")
+    (str "notfizzbuzz")))
+ 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]

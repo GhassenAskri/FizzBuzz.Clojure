@@ -75,3 +75,11 @@ clj::fizzbuzz-outsidein.core=> (fizzBuzzOneNumberMultipleOfFive 7)
 
 "notfizz"
 clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzBuzzOneNumberMultipleOfFiveAndThree
+clj::fizzbuzz-outsidein.core=> 
+(fizzBuzzOneNumberMultipleOfFiveAndThree 10)
+
+"fizzbuzz"
+clj::fizzbuzz-outsidein.core=> 
+"notfizzbuzz"
+clj::fizzbuzz-outsidein.core=> 
