@@ -14,7 +14,9 @@
 (defn fizzBuzzOneNumberMultipleOfThree
   "fizzbuzzOneNumber that multiple of 3 return fizz"
   [number?]
-  (str "fizz"))
+  (if (= (mod number? 3) 0)
+    (str "fizz")
+    (str "notfizz")))
 
 
 (defn -main
