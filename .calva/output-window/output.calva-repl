@@ -36,3 +36,11 @@ clj::fizzbuzz-outsidein.core=>
 clj::fizzbuzz-outsidein.core=> 
 #'fizzbuzz-outsidein.core/fizzBuzzOneNumber
 clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core-test/fizzBuzzOneNumber
+clj::fizzbuzz-outsidein.core-test=> 
+(fizzBuzzOneNumber 3)
+"3"
+clj::fizzbuzz-outsidein.core-test=> 
+(fizzBuzzOneNumber 2)
+"2"
+clj::fizzbuzz-outsidein.core-test=> 

@@ -13,7 +13,9 @@
   [number?]
   (if (= number? 1)
     (str "1")
-    (str "2")))
+    (do (if (= number? 2)
+          (str "2")
+          (str "4")))))
 
 
 
