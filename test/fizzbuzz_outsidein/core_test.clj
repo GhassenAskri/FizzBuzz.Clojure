@@ -8,4 +8,4 @@
 
 (deftest fizzbuzzAnumberThatIsNotMultipleOfThreeOrFive
   (testing "When i fizzbuzz 1 i get 1 as string "
-    (is (= (fizzBuzzOneNumbre 1)))))
+    (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumber 1) "1"))))
