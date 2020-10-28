@@ -18,6 +18,12 @@
     (str "fizz")
     (str "notfizz")))
 
+(defn fizzBuzzOneNumberMultipleOfFive
+  "fizzbuzzOneNumber that multiple of five"
+  [number?]
+  (if(=(mod number? 5) 0)
+   (str "buzz")
+    (str "notbuzz")))
 
 (defn -main
   "I don't do a whole lot ... yet."
