@@ -13,3 +13,7 @@
     (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumber 2) "2")))
   (testing "When i fizzbuzz 4 i get 4 as string "
     (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumber 4) "4"))))
+
+(deftest fizzbuzzAnumberThatIsMultipleOfThree
+  (testing "When I fizzbuzz 3 I get fizz"
+    (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumbeMultipleOfThree 3) "fizz"))))
