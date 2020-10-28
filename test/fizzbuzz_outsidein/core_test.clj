@@ -8,26 +8,26 @@
 
 (deftest fizzbuzzAnumberThatIsNotMultipleOfThreeOrFive
   (testing "When i fizzbuzz 1 i get 1 as string "
-    (is (= (fizzbuzz-outsidein.core/fizzbuzzOneNumberThatIsNotMultipleOfThreeOrFive 1) "1")))
+    (is (= (fizzbuzz-outsidein.core/isNotFizzAndNotBuzz 1) true)))
   (testing "When i fizzbuzz 2 i get 2 as string "
-    (is (= (fizzbuzz-outsidein.core/fizzbuzzOneNumberThatIsNotMultipleOfThreeOrFive 2) "2")))
+    (is (= (fizzbuzz-outsidein.core/isNotFizzAndNotBuzz 2) true)))
   (testing "When i fizzbuzz 4 i get 4 as string "
-    (is (= (fizzbuzz-outsidein.core/fizzbuzzOneNumberThatIsNotMultipleOfThreeOrFive 4) "4"))))
+    (is (= (fizzbuzz-outsidein.core/isNotFizzAndNotBuzz 4) true))))
 
 (deftest fizzbuzzAnumberThatIsMultipleOfThree
   (testing "When I fizzbuzz 3 I get fizz"
-    (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumberMultipleOfThree 3) "fizz")))
+    (is (= (fizzbuzz-outsidein.core/isFizz 3) true)))
   (testing "When I fizzbuzz 9 I get fizz"
-    (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumberMultipleOfThree 9) "fizz")))
+    (is (= (fizzbuzz-outsidein.core/isFizz 9) true)))
   (testing "When I fizzbuzz 9 I get fizz"
-    (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumberMultipleOfThree 10) "notfizz"))))
+    (is (= (fizzbuzz-outsidein.core/isFizz 10) false))))
 
 (deftest fizzbuzzAnumberThatIsMulipleOfFive
   (testing "When I fizzbuzz 5 I get buzz")
-  (is(= (fizzbuzz-outsidein.core/fizzBuzzOneNumberMultipleOfFive 5) "buzz")))
+  (is(= (fizzbuzz-outsidein.core/isBuzz 5) true)))
 
 
 (deftest fizzbuzzAnumberThatIsMulipleOfFiveAndThree
   (testing "When I fizzbuzz 5 I get buzz")
-  (is(= (fizzbuzz-outsidein.core/fizzBuzzOneNumberMultipleOfFiveAndThree 15) "fizzbuzz")))
+  (is(= (fizzbuzz-outsidein.core/isFizzAndBuzz 15) true)))
 
