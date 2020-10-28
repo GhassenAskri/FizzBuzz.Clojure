@@ -21,3 +21,7 @@
     (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumberMultipleOfThree 9) "fizz")))
   (testing "When I fizzbuzz 9 I get fizz"
     (is (= (fizzbuzz-outsidein.core/fizzBuzzOneNumberMultipleOfThree 10) "notfizz"))))
+
+(deftest fizzbuzzAnumberThatIsMulipleOfFive
+  (testing "When I fizzbuzz 5 I get buzz")
+  (is(= (fizzbuzz-outsidein.core/fizzBuzzOneNumberMultipleOfThree 5) "buzz")))
