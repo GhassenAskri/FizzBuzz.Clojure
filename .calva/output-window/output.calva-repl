@@ -569,3 +569,82 @@ clj::fizzbuzz-outsidein.core=>
 clj::fizzbuzz-outsidein.core=> 
 #'fizzbuzz-outsidein.core/isFizzAndBuzz
 clj::fizzbuzz-outsidein.core=> 
+(reduce + ["a" "b"])
+; Execution error (ClassCastException) at fizzbuzz-outsidein.core/eval24359 (form-init13495513060981585133.clj:572).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clojure.lang.Numbers/add (Numbers.java:153)
+clojure.core/+ (core.clj:992)
+clojure.core/+ (core.clj:984)
+clojure.lang.PersistentVector/reduce (PersistentVector.java:329)
+clojure.core/reduce (core.clj:6823)
+clojure.core/reduce (core.clj:6810)
+fizzbuzz-outsidein.core/eval24359 (form-init13495513060981585133.clj:572)
+clojure.lang.Compiler/eval (Compiler.java:7177)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:834)
+clj::fizzbuzz-outsidein.core=> 
+(reduce + [1 2])
+3
+clj::fizzbuzz-outsidein.core=> 
+(reduce str ["yo" "ghassen"])
+"yoghassen"
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/-main
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/-main
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+("1" "fizzbuzz" "9" "4" "5" "10" "fizzbuzz")
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+
+("1" "fizzbuzz" "9" "4" "5" "10" "fizzbuzz")
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+("1" "fizzbuzz" "9" "4" "5" "10" "fizzbuzz")
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+("1" "fizzbuzz" "9" "4" "5" "10" "fizzbuzz")
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/-main
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+("1" "fizz" "fizz" "4" "buzz" "buzz" "fizz")
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/-main
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+("1" "fizzbuzz" "fizz" "4" "buzz" "buzz" "fizzbuzz")
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/-main
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+"1fizzbuzzfizz4buzzbuzzfizzbuzz"
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/-main
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+"1fizzbuzz fizz 4buzz buzz fizzbuzz "
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/-main
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+"1 fizzbuzz fizz 4 buzz buzz fizzbuzz "
+clj::fizzbuzz-outsidein.core=> 
