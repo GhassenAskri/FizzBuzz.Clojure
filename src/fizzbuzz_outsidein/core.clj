@@ -21,16 +21,18 @@
 "fizzbuzzOneNumber return the fizz, buzz, fizzbuzz and a number as string for multiple of three, five, three and five and a number which is not multiple of three nor five respectively"
 [number?]
 (cond
-(fizzBuzz? number?) (str "fizzbuzz")
-(fizz? number?) (str "fizz")
-(buzz? number?)(str "buzz")
- :else (str number?)))
+  (fizzBuzz? number?) "fizzbuzz"
+  (fizz? number?) "fizz"
+  (buzz? number?) "buzz"
+  :else (str number?)))
 
 (defn fizzbuzzAnArrayOfNumbers
 "fizzbuzzAnArrayOfNumbers return a fizzbuzz string from an array of numbers"
 [arrayOfNumbers]
-(string/join " " (map fizzBuzzOneNumber arrayOfNumbers)))
+(reduce (fn [acc val]
+          (str acc " " val))(map fizzBuzzOneNumber arrayOfNumbers)))
+;(string/join " " (map fizzBuzzOneNumber arrayOfNumbers)))
 ; I can't do add an space between strings so i used join
 
 
- 
+
