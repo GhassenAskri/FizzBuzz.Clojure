@@ -30,6 +30,7 @@
 "fizzbuzzAnArrayOfNumbers return a fizzbuzz string from an array of numbers"
 [arrayOfNumbers]
 (string/join " " (map fizzBuzzOneNumber arrayOfNumbers)))
+; I can't do add an space between strings so i used join
 
 
  
