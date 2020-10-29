@@ -1,39 +1,35 @@
 (ns fizzbuzz-outsidein.core
+(:require [clojure.string :as string])
 (:gen-class))
 
-(defn isNotFizzAndNotBuzz 
-"fizzbuzzOneNumber that not multiple of 3 or 5 return the same number as string"
-[number?]
-(not= (mod number? 15) 0))
-
-(defn isFizz
-"fizzbuzzOneNumber that multiple of 3 return fizz"
+(defn fizz?
+"fizz? return true if a number is multiple of 3"
 [number?]
 (= (mod number? 3) 0))
 
-(defn isBuzz
-"fizzbuzzOneNumber that multiple of five"
+(defn buzz?
+"buzz? return true if a number is multiple of 3"
 [number?]
 (= (mod number? 5) 0))
 
-(defn isFizzAndBuzz
-"fizzbuzzOneNumber that multiple of both three and five"
+(defn fizzBuzz?
+"fizzBuzz? return true if a number is multiple of 3 and 5"
 [number?]
 (= (mod number? 15) 0))
 
 (defn fizzBuzzOneNumber
-"fizzbuzz One number "
+"fizzbuzzOneNumber return the fizz, buzz, fizzbuzz and a number as string for multiple of three, five, three and five and a number which is not multiple of three nor five respectively"
 [number?]
 (cond
-(isFizzAndBuzz number?) (str "fizzbuzz ")
-(isFizz number?) (str "fizz ")
-(isBuzz number?)(str "buzz ")
-(isNotFizzAndNotBuzz number?) (str number? " ")))
+(fizzBuzz? number?) (str "fizzbuzz")
+(fizz? number?) (str "fizz")
+(buzz? number?)(str "buzz")
+ :else (str number?)))
 
-(defn fizzbuzz
-"fizzbuzz return a fizzbuzz string from an array of integer"
+(defn fizzbuzzAnArrayOfNumbers
+"fizzbuzzAnArrayOfNumbers return a fizzbuzz string from an array of numbers"
 [arrayOfNumbers]
-(reduce str (map fizzBuzzOneNumber arrayOfNumbers)))
+(string/join " " (map fizzBuzzOneNumber arrayOfNumbers)))
 
 
  

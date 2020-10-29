@@ -648,3 +648,98 @@ clj::fizzbuzz-outsidein.core=>
 (fizzbuzz [1 15 9 4 5 10 0])
 "1 fizzbuzz fizz 4 buzz buzz fizzbuzz "
 clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/isFizz?
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizz?
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+#function[fizzbuzz-outsidein.core/isBuzz]
+clj::fizzbuzz-outsidein.core=> 
+#function[fizzbuzz-outsidein.core/isBuzz]
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+"1 fizzbuzz fizz 4 buzz buzz fizzbuzz "
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+"1fizzbuzzfizz4buzzbuzzfizzbuzz"
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+; Execution error (ArityException) at fizzbuzz-outsidein.core/fizzbuzz (form-init13495513060981585133.clj:31).
+; Wrong number of args (2) passed to: fizzbuzz-outsidein.core/fizzBuzzOneNumber
+clojure.core/map (core.clj:2760)
+clojure.lang.LazySeq/sval (LazySeq.java:42)
+clojure.lang.LazySeq/seq (LazySeq.java:51)
+clojure.lang.RT/seq (RT.java:535)
+clojure.core/seq (core.clj:137)
+clojure.core.protocols/seq-reduce (protocols.clj:24)
+clojure.core.protocols/fn (protocols.clj:75)
+clojure.core.protocols/fn (protocols.clj:13)
+clojure.core/reduce (core.clj:6824)
+clojure.core/reduce (core.clj:6810)
+fizzbuzz-outsidein.core/fizzbuzz (form-init13495513060981585133.clj:31)
+fizzbuzz-outsidein.core/fizzbuzz (form-init13495513060981585133.clj:28)
+fizzbuzz-outsidein.core/eval25545 (form-init13495513060981585133.clj:685)
+clojure.lang.Compiler/eval (Compiler.java:7177)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:202)
+nrepl.middleware.session/session-exec (session.clj:201)
+java.lang.Thread/run (Thread.java:834)
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+"clojure.lang.LazySeq@e7e4a4bf "
+clj::fizzbuzz-outsidein.core=> 
+(concat ["yo" "ghassen"])
+("yo" "ghassen")
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+(\1 \f \i \z \z \b \u \z \z \f \i \z \z \4 \b \u \z \z \b \u \z \z \f \i \z \z \b \u \z \z)
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+"fbb4u4z4zub4u4z4zzb4u4z4zzibb4u4z4zub4u4z4zzb4u4z4zzzbb4u4z4zub4u4z4zzb4u4z4zzzbb4u4z4zub4u4z4zzb4u4z4zzbbb4u4z4zub4u4z4zzb4u4z4zzubb4u4z4zub4u4z4zzb4u4z4zzzbb4u4z4zub4u4z4zzb4u4z4zzz"
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzz
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+"1 fizzbuzz fizz 4 buzz buzz fizzbuzz"
+clj::fizzbuzz-outsidein.core=> 
+(fizzbuzz [1 15 9 4 5 10 0])
+"1 fizzbuzz fizz 4 buzz buzz fizzbuzz"
+clj::fizzbuzz-outsidein.core=> 
+#'fizzbuzz-outsidein.core/fizzbuzzAnArrayOfNumbers
+clj::fizzbuzz-outsidein.core=> 
